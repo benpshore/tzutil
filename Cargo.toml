@@ -1,0 +1,15 @@
+[package]
+name = "tzutil"
+version = "0.1.0"
+edition = "2021"
+description = "Detect the host's configured IANA timezone"
+
+[[bin]]
+name = "tzutil"
+path = "src/main.rs"
+
+[dependencies]
+iana-time-zone = "0.1"
+
+[dev-dependencies]
+tempfile = "3"
